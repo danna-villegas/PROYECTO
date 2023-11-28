@@ -3,6 +3,15 @@ body{
     background-color: #add8e6 ;
     font-family: 'Nerko One', cursive;
     display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #bae0f9, #3c45e7); 
+    color: #fff; 
+ 
    
 }
 
@@ -105,3 +114,35 @@ footer .menu li{
     display: block;
     margin: 90px;
 }
+
+.local {
+    border: rgb(23, 171, 240) solid 2px;
+    padding: 10px ;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 100px;
+    background-color: aquamarine;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    display: block;
+   
+  
+  
+  }
