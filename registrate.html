@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="regis.css">
+    <link rel="shortcut icon" href="imagenes/LOGO.jpeg">
+    
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Fashion store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Fashion store</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../productos.html">PRODUCTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">carrito de compra</a>
+            </li>
+          </ul>
+          <a href="registro/registrate.ejs"><button class="btn btn-success" type="submit">REGISTRATE</button></a>
+            <a href="../index.html"><button class="btn btn-success" type="submit">HOME</button></a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav><br><br>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+
+    <!--FORMULARIO-->
+    <section class="solo">
+      <div class="contenido">
+          <form action="" method="post">
+          <div class="form signup">
+              <h2 style="color: #fff;">REGISTRARSE</h2>
+              <div class="inputBox">
+                  <input type="text" required="required" name="Usuario" required maxlength="50">
+                  <i class="fa-regular fa-user"></i>
+                  <span>USUARIO</span>
+              </div>
+
+              <div class="inputBox">
+                  <input type="text" required="required" name="Nombre" required maxlength="50">
+                  <i class="fa-regular fa-user"></i>
+                  <span>NOMBRES</span>
+              </div>
+
+              <div class="inputBox">
+                  <input type="text" required="required" name="Apellido" required maxlength="50">
+                  <i class="fa-regular fa-user"></i>
+                  <span>APELLIDOS</span>
+              </div>
+
+              <div class="inputBox">
+                  <input type="text" required="required" name="Telefono" required maxlength="50">
+                  <i class="fa-regular fa-user"></i>
+                  <span>TELEFONO</span>
+              </div>
+
+              <div class="inputBox">
+                  <input type="email" required="required" name="Email" required maxlength="50">
+                  <i class="fa-regular fa-envelope"></i>
+                  <span>CORREO ELECTRONICO</span>
+              </div>
+
+
+
+              <div class="inputBox">
+                  <input type="password" required="required" name="Contraseña" required maxlength="50">
+                  <i class="fa-solid fa-lock"></i>
+                  <span>CONTRASEÑA</span>
+              </div>
+
+              <div class="inputBox">
+                  <input type="password" required="required" name="Contraseña2" required maxlength="50">
+                  <i class="fa-solid fa-lock"></i>
+                  <span>CONFIRMAR CONTRASEÑA</span>
+              </div>
+
+              <div class="inputBox">
+                  <input type="submit" name="Enviar" value="CREAR CUENTA"><br><br>
+              
+              </div>
+
+              <p style="color: #fff;">¿YA ERES USUARIO? <a href="login_u.html" style="color: #fff;">INICIAR SESION</a></p>
+
+          </div>
+    
+</body>
+</html>
