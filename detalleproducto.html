@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle producto</title>
+    <link rel="shortcut icon" href="imagenes/LOGO.jpeg">
+   
+</head>
+</head>
+<body>
+    <h1>Detalle producto</h1>
+    <div class="contenedor"></div>
+    <script>
+        const parametrosUrl = new URL (window.location.href)
+        const productId= parametrosUrl.searchParams.get('id');
+        console.log(productId);
+        const productJSON = localStorage.getItem(`product_${productId}`);
+
+
+ document.addEventListener("DOMContentLoaded", () => {
+  const product = JSON.parse(productJSON);
+  const agregarAlCarritoButton = document.getElementById("agregarAlCarrito");
+  agregarAlCarritoButton.addEventListener("click", () => {
+    agregarAlCarrito(product);
+  });
+});
+
+
+function agregarAlCarrito(product) {
+ 
+  let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  carrito.push(product);
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+  alert("Producto agregado al carrito");
+}
+
+if (productJSON) { 
+  const product = JSON.parse(productJSON);
+  const detallesContainer = document.querySelector('.detalles-producto');
+  detallesContainer.innerHTML = `
+    <h2>${product.title}</h2>
+    <img src="${product.image}" alt="${product.title}" style="width: 232px">
+    <p><strong>Precio:</strong> $${product.price}</p>
+    <p><strong>Descripción:</strong> ${product.description}</p>
+  `;
+} else {
+  console.log('Producto no encontrado en el almacenamiento local.');
+}
+
+
+</script>
+</body>
+</html>
